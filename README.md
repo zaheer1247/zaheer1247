@@ -1,12 +1,16 @@
+<!-- Copy into zaheer1247/zaheer1247 README.md. Stop before PUBLISH STEPS. Copy PNGs from docs/readme-assets/ into the profile repo as readme-assets/. This source uses docs/readme-assets/*.png so Cursor Markdown preview (workspace-root) shows images. When publishing, rewrite srcs to readme-assets/*.png. Keep existing banner + lab-topology PNGs. -->
+
 <div align="center">
 
-![Zaheer Abbas — Platform work, from a QA career. Available for hire, Hyderabad.](readme-assets/banner.png)
+![Zaheer Abbas — Available for hire, Hyderabad. Kubernetes lab: kubeadm control plane and three workers.](docs/readme-assets/banner.png)
 
 # Zaheer Abbas
 
-**Quality Engineer** with ~11 years in Selenium-based test automation, moving into **cloud platform architecture** — Kubernetes, RHEL, and AWS.
+**AI systems and cloud infrastructure** — learning how LLMs and agents meet real clusters, not just chat windows.
 
-Hyderabad · Available for hire · CKA in progress — not earned yet
+I run Kubernetes, IaC, and observability in a home lab, and I use generative AI as a daily engineering practice. Direction: quality engineering → cloud/Kubernetes → AI infrastructure → LLM systems and agents.
+
+Hyderabad · Available for hire · Currently studying: CKA
 
 [GitHub](https://github.com/zaheer1247) · [LinkedIn](https://www.linkedin.com/in/zaheer1247/) · [Live portfolio](https://zaheer1247-github-io.vercel.app)
 
@@ -14,96 +18,141 @@ Hyderabad · Available for hire · CKA in progress — not earned yet
 
 ---
 
-### 01 — Home lab
+## What I'm building
 
-A cluster I can break and rebuild. Practice environment for Kubernetes operations, observability, and infrastructure as code — not a production claim.
+Studying **generative AI** in parallel with **CKA**. Daily work happens with Claude Pro, Cursor, and ChatGPT Codex — how I write, debug, and operate, not products I shipped.
+
+Interest now: LLM/agent workflows as a practitioner, and the **infrastructure those systems need** (Kubernetes, containers, metrics). Planning toward becoming an AI generalist. This is a study path, not a research appointment.
+
+Public AI-adjacent work today is the Kubernetes agent in featured work. More GenAI repos will land here when they are real.
+
+<!-- TODO: add public GenAI repo when published -->
+
+---
+
+## Featured work
+
+Infrastructure and platform repos, plus one public LLM agent on Kubernetes.
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**[Gemini DevOps agent for Kubernetes](https://github.com/zaheer1247/DevopsPrj3_Kubernetes_Cluster_Management)**  
+Natural-language cluster ops: Gemini + LangChain tools wrap `kubectl` (deploy, list, delete, status).  
+*Why it matters:* public example of an LLM agent driving real cluster actions — study work, not a paper.  
+`Python` `Gemini` `LangChain` `Kubernetes`
+
+</td>
+<td valign="top" width="50%">
+
+**[AWS Terraform IaC](https://github.com/zaheer1247/devops-project4-aws-terraform-infrastructure-as-code)**  
+Provision and manage cloud infrastructure with Terraform.  
+*Why it matters:* repeatable AWS instead of console clicking.  
+`Terraform` `AWS` `HCL`
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[Monitoring and alerting](https://github.com/zaheer1247/DevopsPrj5_Monitoring_and_Alerting)**  
+Prometheus + Grafana for metrics and dashboards.  
+*Why it matters:* you cannot run AI or cluster workloads you cannot see.  
+`Prometheus` `Grafana` `Shell`
+
+</td>
+<td valign="top" width="50%">
+
+**[Flask + Jenkins + Docker CI/CD](https://github.com/zaheer1247/DevopsPrj1_Flask_Web_App_With_CI_CD)**  
+Commit-to-container pipeline for a Flask app.  
+*Why it matters:* the delivery path workloads still need.  
+`Python` `Flask` `Jenkins` `Docker`
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[Microservices architecture](https://github.com/zaheer1247/DevopsPrj2_Microservices_Architecture)**  
+Python/Flask services with Docker, PostgreSQL, and Redis.  
+*Why it matters:* multi-service runtime, cache, and data — not a single container.  
+`Python` `Flask` `Docker` `PostgreSQL` `Redis`
+
+</td>
+<td valign="top" width="50%">
+
+**[Portfolio](https://github.com/zaheer1247/zaheer1247.github.io)**  
+Personal site. Live: [zaheer1247-github-io.vercel.app](https://zaheer1247-github-io.vercel.app)  
+*Why it matters:* the public narrative next to the repos.  
+`HTML`
+
+</td>
+</tr>
+</table>
+
+---
+
+## Research / AI exploration
+
+Study notes, not a publication list. Topics I am working through:
+
+- Generative AI and LLM systems (how models are used in tools and workflows)
+- Agents: tool-calling loops against real APIs and clusters
+- AI infrastructure: running and observing workloads on Kubernetes
+- Toward an AI generalist practice alongside CKA
+
+---
+
+## Infrastructure lab
+
+Break it, rebuild it, automate it, observe it. Practice cluster — not a production claim.
 
 <div align="center">
 
-![kubeadm topology: one control plane and three RHEL worker VMs](readme-assets/lab-topology.png)
+![kubeadm topology: one control plane and three RHEL worker VMs](docs/readme-assets/lab-topology.png)
 
 </div>
 
-<details>
-<summary>Text topology</summary>
-
-```text
-                    ┌─────────────────────────────────────┐
-                    │     CONTROL PLANE  ·  kubeadm × 1    │
-                    │     k3d alongside for faster loops   │
-                    └──────────────┬──────────────────────┘
-           ┌───────────────────────┼───────────────────────┐
-           ▼                       ▼                       ▼
-    ┌────────────┐          ┌────────────┐          ┌────────────┐
-    │ Worker 01  │          │ Worker 02  │          │ Worker 03  │
-    │  RHEL VM   │          │  RHEL VM   │          │  RHEL VM   │
-    └────────────┘          └────────────┘          └────────────┘
-```
-
-</details>
-
-| Host | Cluster | Alongside |
-| --- | --- | --- |
-| MacBook Pro M4 Max · RHEL 9/10 under Parallels | kubeadm: 1 control plane + 3 workers | k3d for faster iteration |
-
-| Observability | Automation | Runtime |
-| --- | --- | --- |
-| Prometheus, Node Exporter, Grafana | Ansible, Terraform — reusable scripts and golden images over one-off commands | Podman, containerd, Docker — depending on the exercise |
+MacBook Pro M4 Max · RHEL 9/10 under Parallels · kubeadm (1 control plane + 3 workers) · k3d for faster loops · Prometheus, Node Exporter, Grafana · Ansible, Terraform, golden images · Podman, containerd, Docker
 
 ---
 
-### 02 — Public projects
+## Stack
 
-Six repos that show the shift. Each link is the public GitHub repository.
-
-| # | Project | What it is |
-| ---: | --- | --- |
-| 01 | [Flask + Jenkins + Docker CI/CD](https://github.com/zaheer1247/DevopsPrj1_Flask_Web_App_With_CI_CD) | Commit-to-container pipeline for a Flask app |
-| 02 | [Microservices architecture](https://github.com/zaheer1247/DevopsPrj2_Microservices_Architecture) | Python, Flask, Docker, PostgreSQL, Redis |
-| 03 | [Kubernetes cluster management](https://github.com/zaheer1247/DevopsPrj3_Kubernetes_Cluster_Management) | Cluster ops on Kubernetes |
-| 04 | [AWS Terraform IaC](https://github.com/zaheer1247/devops-project4-aws-terraform-infrastructure-as-code) | Infrastructure as code on AWS |
-| 05 | [Monitoring and alerting](https://github.com/zaheer1247/DevopsPrj5_Monitoring_and_Alerting) | Prometheus + Grafana |
-| 06 | [Portfolio](https://github.com/zaheer1247/zaheer1247.github.io) | Source on GitHub · live: [zaheer1247-github-io.vercel.app](https://zaheer1247-github-io.vercel.app) |
-
----
-
-### 03 — Stack
-
-Tools in active use.
-
-<div align="center">
-
-![Kubernetes](https://img.shields.io/badge/Kubernetes-0c1118?style=flat-square&logo=kubernetes&logoColor=5eead4)
-![RHEL](https://img.shields.io/badge/RHEL-0c1118?style=flat-square&logo=redhat&logoColor=e8c07d)
-![Terraform](https://img.shields.io/badge/Terraform-0c1118?style=flat-square&logo=terraform&logoColor=5eead4)
-![AWS](https://img.shields.io/badge/AWS-0c1118?style=flat-square&logo=amazonwebservices&logoColor=e8c07d)
-![Prometheus_Grafana](https://img.shields.io/badge/Prometheus_%2F_Grafana-0c1118?style=flat-square&logo=prometheus&logoColor=e8c07d)
-![Ansible](https://img.shields.io/badge/Ansible-0c1118?style=flat-square&logo=ansible&logoColor=e8edf4)
-![Docker_Podman](https://img.shields.io/badge/Docker_%2F_Podman-0c1118?style=flat-square&logo=docker&logoColor=5eead4)
-![Jenkins](https://img.shields.io/badge/Jenkins-0c1118?style=flat-square&logo=jenkins&logoColor=e8c07d)
-
-</div>
-
-Kubernetes · RHEL · Terraform · AWS · Prometheus / Grafana · Ansible · Docker / Podman · Jenkins
-
----
-
-### 04 — Certifications
-
-**In progress. None earned yet.** Sequence is deliberate: CKA first, then the rest. Do not treat any of these as completed certifications.
-
-| Now | Then, in this order |
+| | |
 | --- | --- |
-| **CKA** — Certified Kubernetes Administrator, studying first | CKS · RHCSA · RHCE · Terraform Associate · AWS SAA · Prometheus Certified Associate |
+| **AI / ML** | Generative AI (study) · LLM/agent workflows · Claude Pro · Cursor · ChatGPT Codex |
+| **Infrastructure** | Kubernetes · kubeadm · k3d · RHEL |
+| **Cloud** | AWS · Terraform |
+| **Containers** | Docker · Podman · containerd |
+| **Observability** | Prometheus · Node Exporter · Grafana |
+| **Automation** | Ansible · reusable scripts · golden VM images |
+| **CI/CD** | Jenkins |
+
+---
+
+## Background
+
+~11 years in software quality and Selenium-based test automation (RealPage QE). That work is how I learned to treat systems as something you verify, break, and make repeatable — the same habits I use on clusters and on AI tooling.
+
+Path I am on: **Software quality & automation → cloud/infrastructure → Kubernetes → AI infrastructure → LLM/AI systems → agents.**
+
+---
+
+## Certifications
+
+**Currently studying: CKA**
+
+Then, in this order: CKS · RHCSA · RHCE · Terraform Associate · AWS SAA · Prometheus Certified Associate
 
 ---
 
 <div align="center">
 
-### Contact
-
-Hyderabad. Available for hire.
+Hyderabad · Available for hire
 
 [github.com/zaheer1247](https://github.com/zaheer1247) · [LinkedIn](https://www.linkedin.com/in/zaheer1247/) · [zaheer1247-github-io.vercel.app](https://zaheer1247-github-io.vercel.app)
 
 </div>
+
