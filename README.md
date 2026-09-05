@@ -1,4 +1,3 @@
-<!-- Copy into zaheer1247/zaheer1247 README.md. Stop before PUBLISH STEPS. Copy PNGs from docs/readme-assets/ into the profile repo as readme-assets/. This source uses docs/readme-assets/*.png so Cursor Markdown preview (workspace-root) shows images. When publishing, rewrite srcs to readme-assets/*.png. Keep existing banner + lab-topology PNGs. -->
 
 <div align="center">
 
