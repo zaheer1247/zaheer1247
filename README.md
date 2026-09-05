@@ -4,7 +4,7 @@ Quality Engineer with ~11 years in test automation, moving into cloud platform a
 
 ## Home lab
 
-- MacBook Pro M4 Max running RHEL 9/10 VMs under Parallels.
+- Local laptop running RHEL 9/10 VMs under Parallels.
 - kubeadm cluster: 1 control plane + 3 workers, plus k3d for faster iteration.
 - Prometheus, Node Exporter, Grafana, Ansible, Terraform, Podman, containerd, Docker. Reusable scripts and golden images over one-off commands.
 
