@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Zaheer Abbas</title>
+  <desc id="desc">Quality Engineer moving into cloud platform architecture. Hyderabad. Available for hire.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06080c"/>
+      <stop offset="55%" stop-color="#0c1118"/>
+      <stop offset="100%" stop-color="#081018"/>
+    </linearGradient>
+    <radialGradient id="glowT" cx="18%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowG" cx="92%" cy="12%" r="48%">
+      <stop offset="0%" stop-color="#e8c07d" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#e8c07d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="280" fill="url(#bg)"/>
+  <rect width="1200" height="280" fill="url(#glowT)"/>
+  <rect width="1200" height="280" fill="url(#glowG)"/>
+
+  <!-- faint grid -->
+  <g stroke="#94a3b8" stroke-opacity="0.10" stroke-width="1">
+    <line x1="0" y1="56" x2="1200" y2="56"/>
+    <line x1="0" y1="112" x2="1200" y2="112"/>
+    <line x1="0" y1="168" x2="1200" y2="168"/>
+    <line x1="0" y1="224" x2="1200" y2="224"/>
+    <line x1="80" y1="0" x2="80" y2="280"/>
+    <line x1="240" y1="0" x2="240" y2="280"/>
+    <line x1="400" y1="0" x2="400" y2="280"/>
+    <line x1="560" y1="0" x2="560" y2="280"/>
+    <line x1="720" y1="0" x2="720" y2="280"/>
+    <line x1="880" y1="0" x2="880" y2="280"/>
+    <line x1="1040" y1="0" x2="1040" y2="280"/>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="3" fill="#5eead4"/>
+
+  <text x="64" y="72" fill="#5eead4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="3.2">AVAILABLE FOR HIRE · HYDERABAD</text>
+  <text x="64" y="148" fill="#e8edf4" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="56" font-weight="700">Zaheer Abbas</text>
+  <text x="64" y="196" fill="#93a0b4" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22">Platform work, from a QA career.</text>
+  <text x="64" y="236" fill="#6b778c" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">Kubernetes · RHEL · AWS · CKA in progress</text>
+
+  <!-- lab mark -->
+  <g transform="translate(980, 78)">
+    <rect x="0" y="0" width="156" height="124" rx="10" fill="#0c1118" stroke="#5eead4" stroke-opacity="0.45"/>
+    <text x="14" y="22" fill="#6b778c" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="1.4">KUBEADM</text>
+    <rect x="14" y="34" width="128" height="28" rx="4" fill="#5eead4" fill-opacity="0.12" stroke="#5eead4" stroke-opacity="0.5"/>
+    <text x="78" y="52" text-anchor="middle" fill="#e8edf4" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">Control plane</text>
+    <rect x="14" y="72" width="38" height="36" rx="4" fill="#06080c" stroke="#94a3b8" stroke-opacity="0.28"/>
+    <rect x="59" y="72" width="38" height="36" rx="4" fill="#06080c" stroke="#94a3b8" stroke-opacity="0.28"/>
+    <rect x="104" y="72" width="38" height="36" rx="4" fill="#06080c" stroke="#94a3b8" stroke-opacity="0.28"/>
+    <text x="33" y="94" text-anchor="middle" fill="#e8c07d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">W1</text>
+    <text x="78" y="94" text-anchor="middle" fill="#e8c07d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">W2</text>
+    <text x="123" y="94" text-anchor="middle" fill="#e8c07d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">W3</text>
+  </g>
+</svg>
