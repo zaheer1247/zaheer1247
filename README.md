@@ -11,7 +11,7 @@ I run Kubernetes, IaC, and observability in a home lab, and I use generative AI 
 
 Hyderabad · Available for hire · Currently studying: CKA
 
-[GitHub](https://github.com/zaheer1247) · [LinkedIn](https://www.linkedin.com/in/zaheer1247/) · [Live portfolio](https://zaheer1247-github-io.vercel.app)
+[GitHub](https://github.com/zaheer1247) [![GitHub Pro](docs/readme-assets/github-pro-badge.svg)](https://github.com/pricing#feature-pro) · [LinkedIn](https://www.linkedin.com/in/zaheer1247/) · [Live portfolio](https://zaheer1247-github-io.vercel.app)
 
 </div>
 
