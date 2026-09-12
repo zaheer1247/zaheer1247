@@ -13,6 +13,16 @@ Hyderabad · Available for hire · Currently studying: CKA
 
 [GitHub](https://github.com/zaheer1247) [![GitHub Pro](docs/readme-assets/github-pro-badge.svg)](https://github.com/zaheer1247) · [LinkedIn](https://www.linkedin.com/in/zaheer1247/) · [Live portfolio](https://zaheer1247-github-io.vercel.app)
 
+**Earned achievements**
+
+<a href="https://github.com/zaheer1247?tab=achievements&achievement=pull-shark" title="Pull Shark">
+  <img src="docs/readme-assets/PullShark.png" width="72" height="72" alt="Pull Shark" />
+</a>
+&nbsp;
+<a href="https://github.com/zaheer1247?tab=achievements&achievement=arctic-code-vault-contributor" title="Arctic Code Vault Contributor">
+  <img src="docs/readme-assets/ArcticCodeVaultContributor.png" width="72" height="72" alt="Arctic Code Vault Contributor" />
+</a>
+
 </div>
 
 ---
